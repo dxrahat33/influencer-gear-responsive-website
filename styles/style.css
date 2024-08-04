@@ -98,6 +98,32 @@
 
 
 
+/* header-brand-logo */
+.brand-logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 70px;
+    gap: 60px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(to right, rgba(192, 204, 218, 0.1), rgba(192, 204, 218, 0.6), rgba(192, 204, 218, 0.1));
+    border-image-slice: 1;
+    border-image-width: 2px 0; /* Top and bottom border */
+    margin-bottom: 100px;
+}
+.brand-logo img{
+    width: 100%;
+    padding: 5px 0;
+}
+/* header-brand-logo */
+
+
+
+
+
 
 
 
@@ -121,5 +147,37 @@
     .header-img img{
         width: 75%;
     }
+    .brand-logo{
+        border: none;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .brand-logo img{
+        width: 20%;
+    }
 }
 /* small device responsive */
+/* medium devics */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .header{
+        margin: 0 30px;
+    }
+    .header-textbox{
+        text-align: center;
+    }
+    .header-content{
+        flex-direction: column-reverse;
+    }
+    .brand-logo{
+        border: none;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+    .brand-logo img{
+        width: 50%;
+    }
+    #last-logo{
+        grid-column: 2 / 3;
+    }
+}
+/* medium devics */
