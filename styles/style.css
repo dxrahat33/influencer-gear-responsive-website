@@ -118,6 +118,8 @@
         justify-items: center;
         text-align: center;
     }
-    
+    .header-img img{
+        width: 75%;
+    }
 }
 /* small device responsive */
